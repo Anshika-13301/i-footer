@@ -6,7 +6,6 @@ const Footer = () => {
   return (
     <footer className="bg-blue-50 text-blue-900 px-6 py-8">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-6">
-        {/* Column 1: Contact */}
         <div>
           <h2 className="text-xl font-bold mb-2">Renu Sharma Foundation</h2>
           <p><strong>Head Office:</strong> Lorem ipsum lorem ipsum lorem ipsum</p>
@@ -14,8 +13,6 @@ const Footer = () => {
           <p><strong>Fax:</strong> 022-2222222</p>
           <p><strong>Email:</strong> info@renusharmafoundation.com</p>
         </div>
-
-        {/* Column 2: Quick Links */}
         <div>
           <h2 className="text-lg font-bold mb-2">Quick Links</h2>
           <ul className="space-y-1">
@@ -26,8 +23,6 @@ const Footer = () => {
             <li><Link to="/contact" className="hover:underline">Contact Us</Link></li>
           </ul>
         </div>
-
-        {/* Column 3: Others */}
         <div>
           <h2 className="text-lg font-bold mb-2">Others</h2>
           <ul className="space-y-1">
@@ -37,8 +32,6 @@ const Footer = () => {
             <li><Link to="/about" className="hover:underline">About Us</Link></li>
           </ul>
         </div>
-
-        {/* Column 4: About Us */}
         <div>
           <h2 className="text-lg font-bold mb-2">About Us</h2>
           <ul className="space-y-1">
@@ -52,13 +45,10 @@ const Footer = () => {
 
       <div className="flex flex-col md:flex-row justify-between items-center border-t pt-4">
         <p className="text-sm mb-2 md:mb-0">©2024 All rights reserved</p>
-
-        {/* Social Icons */}
         <div className="flex gap-4 text-blue-700 text-xl">
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+          <a href="https://www.instagram.com/renusharmafoundation/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
           <a href="https://telegram.org" target="_blank" rel="noopener noreferrer"><FaTelegram /></a>
-          <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer"><FaTiktok /></a>
-          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"><FaYoutube /></a>
+          <a href="https://www.youtube.com/@OfficialRenusharma-h3n" target="_blank" rel="noopener noreferrer"><FaYoutube /></a>
         </div>
       </div>
     </footer>
