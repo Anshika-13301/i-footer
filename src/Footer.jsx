@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaInstagram, FaTelegram, FaTiktok, FaYoutube } from 'react-icons/fa';
+import { FaInstagram, FaTelegram, FaYoutube } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="bg-blue-50 text-blue-900 px-6 py-8">
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-6">
+    <footer className="bg-blue-50 text-blue-900 px-4 py-8 w-full">
+      {/* Grid Layout: 1 col (mobile), 2 col (small screen), 4 col (desktop) */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 mb-10">
         <div>
           <h2 className="text-xl font-bold mb-2">Renu Sharma Foundation</h2>
           <p><strong>Head Office:</strong> Lorem ipsum lorem ipsum lorem ipsum</p>
@@ -43,8 +44,9 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row justify-between items-center border-t pt-4">
-        <p className="text-sm mb-2 md:mb-0">©2024 All rights reserved</p>
+      {/* Bottom section responsive fix */}
+      <div className="flex flex-col md:flex-row justify-between items-center border-t pt-6 gap-4 text-center">
+        <p className="text-sm">©2024 All rights reserved</p>
         <div className="flex gap-4 text-blue-700 text-xl">
           <a href="https://www.instagram.com/renusharmafoundation/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
           <a href="https://telegram.org" target="_blank" rel="noopener noreferrer"><FaTelegram /></a>
